@@ -30,7 +30,17 @@ const Home: NextPage = () => {
                 </header>
 
                 <main className={styles['home__content']}>
-                    <h1>Body</h1>
+                    <p className={styles['home__intro']}>
+                        There are <span className="bold">10</span> possible
+                        hands you can create in Poker, with each one being
+                        ranked differently compared to the others.
+                    </p>
+                    <p className={styles['home__intro']}>
+                        If you are new to playing Poker, it is important that
+                        you understand what these possible hands are and which
+                        ones are better than others. Use this guide to help you
+                        get familiar.
+                    </p>
                 </main>
 
                 <footer className={styles['home__footer']}>Footer</footer>
