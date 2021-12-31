@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import aces from '../public/images/aces.png';
+import Hands from '../components/hands/hands';
 
 const Home: NextPage = () => {
     return (
@@ -41,6 +42,8 @@ const Home: NextPage = () => {
                         ones are better than others. Use this guide to help you
                         get familiar.
                     </p>
+
+                    <Hands />
                 </main>
 
                 <footer className={styles['home__footer']}>Footer</footer>
