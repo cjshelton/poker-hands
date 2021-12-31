@@ -2,12 +2,52 @@
 
 .home {
     background-color: $poker-green;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    min-height: 100%;
+    padding: 1rem;
+
+    color: $white;
+
+    &__inner {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        background-color: transparent;
+        border: 0.2rem solid $white;
+        border-radius: 1rem;
+    }
 
     &__header {
         flex: 0 1 0;
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 5rem;
+        color: $white;
+
+        @media (max-width: $medium) {
+            font-size: 3rem;
+        }
+    }
+
+    &__aces-container {
+        width: 25rem;
+
+        @media (max-width: $medium) {
+            width: 15rem;
+        }
+    }
+
+    &__intro {
+        margin-bottom: 1rem;
+
+        font-size: 1.8rem;
     }
 
     &__content {
@@ -16,5 +56,7 @@
 
     &__footer {
         flex: 0 1 0;
+
+        text-align: center;
     }
 }
