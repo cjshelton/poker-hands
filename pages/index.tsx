@@ -42,11 +42,31 @@ const Home: NextPage = () => {
                         ones are better than others. Use this guide to help you
                         get familiar.
                     </p>
+                    <p className={styles['home__intro']}>
+                        All possible hands are listed below in descending order
+                        of their rank, starting with the top hand -{' '}
+                        <span className="bold">Royal Flush</span>.
+                    </p>
 
                     <Hands />
                 </main>
 
-                <footer className={styles['home__footer']}>Footer</footer>
+                <footer className={styles['home__footer']}>
+                    <p>
+                        Built by{' '}
+                        <a href="https://cshelton.co.uk" className="developer">
+                            Chris Shelton
+                        </a>{' '}
+                        <span>&copy; {new Date().getFullYear()}</span>
+                    </p>
+                    <p>
+                        As part of the{' '}
+                        <a href="https://www.netlify.com/blog/2021/12/01/dusty-domains-your-forgotten-domains-raise-money-for-charity/">
+                            Netlify Dusty Domains
+                        </a>{' '}
+                        challenge
+                    </p>
+                </footer>
             </div>
         </div>
     );
