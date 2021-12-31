@@ -9,7 +9,10 @@ export default function Hand({
 }: {
     name: string;
     description?: string;
-    cards: { imgSrc: any; alt: string }[];
+    cards: {
+        imgSrc: StaticImageData;
+        alt: string;
+    }[];
 }) {
     return (
         <section className={styles['hand']}>
