@@ -18,12 +18,7 @@ export default function Hand({
         <section className={styles['hand']}>
             <div className={styles['hand__title']}>
                 <div className={styles['hand__icon-container']}>
-                    <Image
-                        src={spade}
-                        layout="responsive"
-                        alt="spade suit"
-                        placeholder="blur"
-                    />
+                    <Image src={spade} layout="responsive" alt="spade suit" />
                 </div>
                 <p className={styles['hand__name']}>{name}</p>
             </div>
