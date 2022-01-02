@@ -25,6 +25,7 @@ const Home: NextPage = () => {
                             alt="Four playing cards fanned out each one being an Ace of a suit"
                             layout="responsive"
                             placeholder="blur"
+                            priority={true}
                         />
                     </div>
                     <h1 className={styles['home__title']}>Poker Hands</h1>
@@ -34,18 +35,16 @@ const Home: NextPage = () => {
                     <p className={styles['home__intro']}>
                         There are <span className="bold">10</span> possible
                         hands you can create in Poker, with each one being
-                        ranked differently compared to the others.
+                        ranked differently compared to the others. All possible
+                        hands are listed below in descending order of their
+                        rank, starting with the top hand -{' '}
+                        <span className="bold">Royal Flush</span>.
                     </p>
                     <p className={styles['home__intro']}>
                         If you are new to playing Poker, it is important that
                         you understand what these possible hands are and which
                         ones are better than others. Use this guide to help you
                         get familiar.
-                    </p>
-                    <p className={styles['home__intro']}>
-                        All possible hands are listed below in descending order
-                        of their rank, starting with the top hand -{' '}
-                        <span className="bold">Royal Flush</span>.
                     </p>
 
                     <Hands />
